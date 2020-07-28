@@ -15,3 +15,20 @@ In this guide I will be sharing with you all of the hardware and software I boug
 
 
 <b>Software:</b>
+<ol>
+  <li>Setup your esp32 on micropython using google.</li>
+  <li>Install Adafruit-Ampy using pip</li>
+  <li>Install PuTTy</li>
+  <li>Connect your Esp32 with your computer</li>
+  <li>Open command prompt and run the command: mode <br>
+  This will show you the COM port your ESP 32 is connected to
+  </li>
+  <li>Using ampy put all of the following files in the following order:</li>
+  <ol>
+    <li>deviceData.json</li>
+    <li>Keypad.py</li>
+    <li>site</li>
+    <li>Boot.py</li>
+  </ol>
+  <li>With this the esp32 will try to connect to the wifi and will startup in server mode</li>
+</ol>
