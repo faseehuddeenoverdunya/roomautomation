@@ -5,7 +5,7 @@ In this guide I will be sharing with you all of the hardware and software I boug
 <b>Hardware:</b>
 <ol>
   <li>Esp 32 NodeMCU (ESP32 DEVKITV1)</li>
-  <li>5V power supply with barell jack and ofc a female jack</li>
+  <li>5V power supply with barrel jack and ofc a female jack</li>
   <li>Relay Module with as many relays you want!</li>
   <li>Vero board</li>
   <li>5V voltage regulator (7805)</li>
