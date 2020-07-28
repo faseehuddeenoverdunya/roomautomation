@@ -1,0 +1,29 @@
+{
+    "deviceName": "AP_MODE_SSID",
+    "apPass": "AP_MODE_PASSWORD",
+    "wifiAP": [
+        {
+            "ssid": "YOUR_SSID_HERE",
+            "password": "YOUR_WIFI_PASSWORD_HERE"
+        }
+    ],
+    "try_connect": "6",
+    "SwitchPins": {
+        "s1": {
+            "Pin": "15",
+            "State": "0"
+        },
+        "s2": {
+            "Pin": "4",
+            "State": "0"
+        },
+        "s3": {
+            "Pin": "19",
+            "State": "0"
+        },
+        "s4": {
+            "Pin": "18",
+            "State": "0"
+        }
+    }
+}
