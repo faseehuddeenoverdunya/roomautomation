@@ -1,0 +1,91 @@
+<html>
+
+    <head>
+        <title>alpha.p</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        
+        <style>
+            .wrapper{
+                background-color: #121212;
+                height: 100vh;
+                width: 100vw;
+                display: grid;
+                flex-direction: column;
+                align-items: center;
+                justify-items: center;
+            }
+            .app{
+                background-color: #222222;
+                box-shadow: 5px 5px;
+                border-radius: 1vh;
+                height: 30vh;
+                min-height: 325px;
+                width: 30vw;
+                min-width: 300px;
+                
+                
+            }
+            .cols{
+                text-align: center; 
+                
+            }
+            .buttons{
+                display: flex;
+                justify-content: center;
+            }
+            
+            .btn{
+                margin: 5px;
+                height: 100px;
+                width: 100px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: #ffffff
+            }
+            .btn span{
+                font-size: 20px;
+            }
+            
+            #title{
+                color:white;
+                text-align: center;
+            }
+        </style>
+        
+        <script>
+            function asyncStateChange(id){
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                       // Typical action to be performed when the document is ready:
+                       console.log("done")
+                    }
+                };
+                xhttp.open("GET", "/" + id, true);
+                xhttp.send();
+            }
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="app">
+                <h2 id="title">alpha.p</h2>
+                <div class="buttons">
+
+                    <div class="cols">
+                    <div id="s1" class="toggleButton btn " onclick="asyncStateChange(id)">
+                    <span>Light 1</span>
+                        </div>
+                    <div id="s2" class="toggleButton btn " onclick="asyncStateChange(id)"> <span>Light 2</span> </div>
+                </div>
+                <div class="cols">
+                    <div id="s3" class="toggleButton btn " onclick="asyncStateChange(id)"> <span>Exhaust</span> </div>
+                    <div id="s4" class="toggleButton btn " onclick="asyncStateChange(id)"> <span>L.E.Ds</span> </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
